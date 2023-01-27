@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <!-- main wrapper  -->
+  <div class="main_wrapper h-100">
+    <div class="bg-image desk-img"><img src="./images/bg-desktop.png" alt=""></div>
+    <div class="bg-image mob-img"><img src="./images/bg-mobile.png" alt=""></div>
+    <div class="card_container">
+      <div class="left_side_wrapper">
+        <div class="document p-5">
+          <div class="p-4"><span><img src="/images/logo.svg" alt="img"></span></div>
+          <div class="p-4 d-flex align-items-center">
+            <div class="doc"><img class="doc1" src="/images/icon-document.svg" alt=""></div>
+            <div class="doc"><img class="doc2" src="/images/icon-folder.svg" alt=""></div>
+            <div class="doc"><img class="doc3" src="/images/icon-upload.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="right_side_wrapper">
+        <div class="storage p-5">
+          <span class="px-4 mt-4 text-white fw-lighter font-primary text">You’ve used <span class="fw-bolder">815
+              GB</span>
+            of your
+            storage</span>
+          <div class="mt-5 progress_bar_wrapper px-4">
+            <div class="progress_bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="mt-1 px-4 d-flex justify-between text-white font-primary">
+            <div>0 GB</div>
+            <div>1000 GB</div>
+          </div>
+        </div>
+        <div class="pop_wrapper p-1">
+          <div class="p-3 px-5 pop fw-bold font-primary d-flex align-items-center text-nowrap">
+            <span class="fw-bolder fs-1 me-2">185</span><span class="fs-6 text-secondary fw-bolder">GB LEFT</span>
+          </div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
+<!-- 
+You’ve used 815 GB of your storage
+
+185 GB Left
+
+0 GB
+1000 GB -->

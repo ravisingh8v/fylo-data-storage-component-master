@@ -1,0 +1,159 @@
+.card_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   border: 1px solid red;
+  height: 40%;
+  @media (max-width: 1470px) {
+    width: 70%;
+  }
+  @media (max-width: 1230px) {
+    width: 80%;
+  }
+  @media (max-width: 1050px) {
+    width: 90%;
+  }
+  @media (max-width: 930px) {
+    flex-direction: column;
+    height: 56%;
+  }
+  @media (max-width: 530px) {
+    width: 100%;
+  }
+}
+.left_side_wrapper {
+  height: 100%;
+  width: 40%;
+  //   border: 2px solid green;
+  padding: 30px 15px 30px 0;
+  @media (max-width: 930px) {
+    width: 80%;
+    padding: 30px 30px 30px 30px;
+  }
+  @media (max-width: 530px) {
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+  }
+}
+.right_side_wrapper {
+  height: 100%;
+  width: 60%;
+  padding: 30px 0 30px 15px;
+  //   border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: end;
+  .text {
+    display: inline-block;
+  }
+  @media (max-width: 930px) {
+    width: 80%;
+    padding: 30px 30px 30px 30px;
+    .text {
+      display: block;
+      text-align: center;
+      //   white-space: nowrap;
+    }
+  }
+  @media (max-width: 575px) {
+    padding: 15px 15px 15px 15px;
+  }
+  @media (max-width: 530px) {
+    width: 100%;
+  }
+}
+.document {
+  height: 100%;
+  background-color: $darkblue;
+  border-radius: 10px;
+  border-top-right-radius: 105px;
+  @media (max-width: 530px) {
+    padding: 15px !important;
+  }
+}
+.storage {
+  height: 70%;
+  background-color: $darkblue;
+  border-radius: 10px;
+  @media (max-width: 930px) {
+    height: 100%;
+  }
+  @media (max-width: 530px) {
+    padding: 15px !important;
+  }
+}
+.doc {
+  background-color: $darkestblue;
+  margin: 0px 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.doc:first-child {
+  margin-left: 0;
+  padding: 10px 18px;
+}
+.doc:nth-child(2) {
+  padding: 10px 13px;
+}
+.doc1,
+.doc2,
+.doc3 {
+  height: 22px;
+}
+
+.progress_bar {
+  background-color: $darkestblue;
+  height: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 2px;
+}
+.progress {
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  background-image: $Gradient;
+}
+.pop_wrapper {
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  //   z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media (max-width: 930px) {
+    right: 50%;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.arrow {
+  margin-top: -2px;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+  border-top: 10px solid $White;
+  @media (max-width: 930px) {
+    display: none;
+  }
+}
+.pop {
+  background-color: white;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  @media (max-width: 930px) {
+    border-radius: 10px;
+  }
+}
