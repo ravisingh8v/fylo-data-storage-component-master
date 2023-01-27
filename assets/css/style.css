@@ -882,6 +882,18 @@ body {
   height: 100%;
   border-radius: 20px;
   background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  height: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .pop_wrapper {
