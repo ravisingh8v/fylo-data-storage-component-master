@@ -13,9 +13,13 @@ body {
 }
 
 // helper classes //
+// Font Family
 .font-primary {
   font-family: $font-primary;
 }
+
+// Display Properties
+
 .d-none {
   display: none;
 }
@@ -78,11 +82,10 @@ body {
   font-weight: 200;
 }
 
-// color
+//text customization
 .text-white {
   color: $White;
 }
-
 .text-nowrap {
   white-space: nowrap;
 }
